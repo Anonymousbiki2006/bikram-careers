@@ -1,0 +1,243 @@
+html{
+    background-color:lavenderblush;
+}
+body{
+    margin:0;
+    padding:0;
+    font-family: sans-serif;/*selecting font style*/
+    text-align:justify;
+}
+#navbar{
+    padding:5px;
+    margin:0px;
+    display:flex;
+}
+#logo{
+    height:70px
+}
+#logo-with-text{
+    padding-left:24px;
+}
+h1{
+    text-align:center;
+    text-decoration:underline;
+    color:black;
+    font-size:2.5rem;
+    font-weight:600;
+}
+h2{
+    text-align:center;
+    color:black;
+    font-size:2rem;
+    font-weight:600;
+}
+h3{
+    text-align: left;/*aligns the text to the left side*/
+    color:black;
+    margin-bottom:2px;
+    font-size:1.75rem;
+    font-weight:600;
+}
+h4{
+    font-weight:600;
+    font-size:0.75rem;
+}
+#about{
+    display: flex; /*By default two divs show vertically but in order to show it side by side we use "flex*/
+    max-width:1000px;/*Can expand maximum to 1000px wrt the space avaiable*/
+    margin: 0 auto;
+    padding:10px;
+    text-align:center;
+}
+a{
+    text-decoration:None;/*To reove th eunderline under the hyperlinks*/
+    color:gray;
+}
+a:hover{
+    color:black;
+    box-shadow:0 2px 4px 0 rgba(0,0,0,0.2);
+    font-size:19px;
+}
+#banner{
+    width: 100%;
+    object-fit: cover;/*To utilize the entire space avaiable*/
+}
+#description{
+    font-size:1.25rem;
+}
+#myimage{
+    width:50%;
+    height:auto;
+    border-radius:5px;
+    margin:0 auto;
+}
+#jobs{
+    max-width:100%;
+    text-align: center;
+}
+#jobs-table{
+    margin:0 auto;
+    max-width: 1000px;
+    padding: 8px;
+    border:solid black 2px;
+    padding-left: 10px;
+}
+#jobs-header{
+    padding:12px;
+    background-color:aquamarine;
+    border:dashed 1px black;
+}
+.jobs-data{
+    color:#555555;
+    text-align: center;
+    padding:45px;
+    margin-left:6px;
+    margin-right:6px;
+    margin-top:6px;
+    margin-bottom:6px;
+}
+#jobs-table tr:nth-child(odd){
+    background-color:rgb(247, 172, 118);
+}
+.job{
+    border:1px solid #dddddd;
+    margin-top:8px;
+    border-radius:5px;
+    padding:8px;
+}
+.job-title{
+    font-size:1.25rem;
+    font-weight:500;
+    color:#222222;
+}
+.job-detail{
+    margin-top:4px;
+    color:#555555;
+}
+#application{
+    max-width:1000px;
+    margin:24px auto;
+    padding:16px 8px;
+    border:2px solid black;
+    border-radius:5px;
+
+}
+#applicaiton div{
+    margin:12px;
+    padding:8px;
+}
+#form-group{
+    margin:8px 0;
+}
+.form-input input[type=submit]{
+    background-color:lightgoldenrodyellow;
+    color:black;
+    cursor:pointer;
+}
+.form-input textarea{
+    width:fit-content;
+}
+.from-group input,select,option,textarea{
+    padding:8px;
+    margin-top:4px;
+    border-radius:5px;
+    border-color:gray;
+    width:90%;
+}
+#footer{
+    background-color:lightgray;
+    padding:0 16px;
+    margin-top: 32px;
+    text-align: center;  /*aligns text at the center of the screen*/
+}
+#footer-links{
+    list-style:none;/*To remove the bulleting/numbering in lists*/
+}
+#footer-links li{
+    display: inline;/*to display the links side by side*/
+    padding: 12px 16px;
+    justify-content: space-evenly;
+}
+.footer-logo{
+    height:20px;
+    width:20px;
+}
+#copyright{
+    color:gray;
+}
+/*Small devices(mobiles)*/
+@media screen and (max-width:767px){
+    html{
+        font-size:16px;
+    }
+   #logo-with-text{
+    display:none;
+   }
+   #banner{
+    height:200px;
+   }
+   h1{
+    margin:20px 0;
+   }
+   #about{
+    flex-direction: column;
+   }
+   #logo-with-text{
+    display:none;
+   }
+   #jobs-table{
+    display:none;
+   }
+   #footer-links li{
+    display:block;
+    padding-left:0;
+   }
+}
+/*Medium devices(tablets)*/
+@media screen and (min-width:768px) and (max-width:992px){
+    html{
+        font-size:18px;
+    }
+    #banner{
+        height:240px;
+    }
+    h1{
+        margin:20px 0;
+    }
+    #job-list{
+        display:none;
+    }
+    .from-group input,select{
+        width:auto;
+    }
+    .form-group textarea,option{
+        width:90%;
+    }
+    a:hover{
+        font-size:21px;
+    }
+}
+/*Large devices(laptops)*/
+@media screen and (min-width:992px){
+    html{
+        font-size:20px;
+    }
+    #banner{
+        height:300px;
+    }
+    h1{
+        margin:20px 0;
+    }
+    #job-list{
+        display:none;
+    }
+    .from-group input,select{
+        width:auto;
+    }
+    .form-group textarea,option{
+        width:90%;
+    }
+    a:hover{
+        font-size:23px;
+    }
+}
